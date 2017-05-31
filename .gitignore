@@ -29,6 +29,7 @@
 [Bb]in/
 [Oo]bj/
 ipch/
+.vs/
 *.VC.db
 
 !/tools/bin/
@@ -43,6 +44,7 @@ Listings/
 
 *.axfdump
 /crypto/lib
+/crypto/readme.txt
 Firmware License (Crypto).rtf
 License (Crypto).rtf
 PKCryptoWelcome.rtf

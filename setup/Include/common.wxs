@@ -78,6 +78,8 @@
       </Directory>
       <!--EndINSTALLDIR-->
 
+	  <!-- Must be in VSIX since VS15 -->
+      <!--
       <Directory Id="MSBuildExtensionsRoot" Name="MSBuild">
         <Directory Id="MSBuildExtensionsCompany" Name="$(var.CompanyName)">
           <Directory Id="MSBuildExtensionsProduct" Name="$(var.CommonProductName)">
@@ -89,6 +91,7 @@
           </Directory>
         </Directory>
       </Directory>
+    -->
     </Directory>
     <!--EndProgramFilesFolder-->
 
