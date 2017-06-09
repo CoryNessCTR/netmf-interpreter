@@ -7,7 +7,7 @@
   <?else?>
   <Property Id="BaseProgramDir">$(env.SystemDrive)\Program Files (x86)\</Property>
   <?endif?>
-
+  
   <Directory Id="TARGETDIR" Name="SourceDir">
     <Directory Id="ProgramFilesFolder" Name="PFiles" >
 
@@ -88,6 +88,11 @@
             <Directory Id="MSBuildExtensionsPath_MFv4_1" Name="v4.1"/>
             <Directory Id="MSBuildExtensionsPath_MFv4_0" Name="v4.0"/>
             <Directory Id="MSBuildExtensionsPath_MFv3_0" Name="v3.0"/>
+
+            <Component Id="Component_SetNetMfTargetsBaseDir" Guid="{6D377B84-99E6-4C23-B021-BBD99A039E88}">
+              <Environment Id="SetNetMfTargetsBaseDir" Action="create" Name="NetMfTargetsBaseDir" Permanent="no" System="yes" Value="[BaseProgramDir]\MSBuild\$(var.CompanyName)\$(var.CommonProductName)\" />
+            </Component>
+            
           </Directory>
         </Directory>
       </Directory>

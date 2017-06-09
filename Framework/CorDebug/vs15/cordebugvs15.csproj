@@ -4,7 +4,6 @@
   <PropertyGroup>
     <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
-    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
@@ -50,7 +49,7 @@
       <HintPath>$(VSINSTALLDIR)\Common7\IDE\CommonExtensions\Microsoft\VisualStudio\Editors\Microsoft.VisualStudio.Editors.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.Utilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <SpecificVersion>false</SpecificVersion>
+      <SpecificVersion>true</SpecificVersion>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.ManagedInterfaces" />
     <Reference Include="Microsoft.VisualStudio.Shell.15.0" />
@@ -94,6 +93,7 @@
     <Reference Include="Microsoft.VisualStudio.Shell.Interop.9.0" />
     <Reference Include="Microsoft.VisualStudio.Shell.Interop.11.0" />
     <Reference Include="Microsoft.VisualStudio.Shell.Interop.10.0" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.15.3.DesignTime" />
     <Reference Include="Microsoft.VisualStudio.TextManager.Interop" />
     <Reference Include="Microsoft.SPOT.Debugger">
       <HintPath>$(BUILD_TREE_SERVER)\DLL\Microsoft.SPOT.Debugger.dll</HintPath>
